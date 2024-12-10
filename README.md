@@ -9,12 +9,14 @@ Image preprocessing involves resizing, normalization, and augmentation to enhanc
 Model performance is evaluated using metrics such as accuracy, precision, and recall. 
 This approach provides an efficient and reliable solution to assist healthcare professionals in early disease detection and informed clinical decision-making.
 
+
 ## Table of Contents
   * Project Overview
   * Features
   * Technologies Used
   * Dataset
   * Model Training and Evaluation 
+
 
 ## 🚀 Project Overview
 Lung diseases are a significant public health concern, often requiring timely and accurate diagnosis to prevent severe health complications. 
@@ -53,6 +55,7 @@ The primary goal is to assist healthcare professionals by reducing diagnostic ti
 - **Visualization**: 📉 Matplotlib, Seaborn  
 
 
+
 ## 📂 Dataset  
 
 This project uses publicly available datasets such as:  
@@ -63,6 +66,7 @@ This project uses publicly available datasets such as:
 🛠️ **Preprocessing Steps**:  
 - Normalize image data for consistency.  
 - Apply data augmentation (rotation, scaling, flipping) to enhance model generalization.  
+
 
 
 ## 🤖 Model Training and Evaluation  
@@ -83,3 +87,15 @@ This project uses publicly available datasets such as:
   3. Fine-tune the model to improve results based on evaluation metrics.  
 
 By combining cutting-edge ML techniques with real-world datasets, this project offers a powerful tool for improving diagnostic workflows. 🌟
+
+
+## 📜 License  
+
+This project is licensed under the **MIT License**. For more details, refer to the [LICENSE](LICENSE) file.  
+
+
+## 📞 Contact  
+
+Feel free to reach out for any inquiries, suggestions, or collaboration opportunities:  
+  - ✉️ **Email**: sshaikgowhar@example.com  
+  - 🌐 **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/shaikgowhar672004/)   
