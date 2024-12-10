@@ -23,7 +23,7 @@ This project leverages machine learning to create an automated system for:
   * 📊 Classification: Differentiating between diseases such as pneumonia, tuberculosis, and lung cancer.
 The primary goal is to assist healthcare professionals by reducing diagnostic time and improving accuracy, especially in under-resourced areas.
 
-### ✨ Features  
+## ✨ Features  
 
 - **Automated Detection**:  
   Quickly detects abnormalities in lung imaging data.  
@@ -40,7 +40,7 @@ The primary goal is to assist healthcare professionals by reducing diagnostic ti
 - **Explainability**:  
   Provides interpretable results to aid healthcare professionals.  
 
-### 🛠️ Technologies Used  
+## 🛠️ Technologies Used  
 
 - **Programming Language**: 🐍 Python  
 - **Machine Learning Frameworks**:  
@@ -53,7 +53,7 @@ The primary goal is to assist healthcare professionals by reducing diagnostic ti
 - **Visualization**: 📉 Matplotlib, Seaborn  
 
 
-### 📂 Dataset  
+## 📂 Dataset  
 
 This project uses publicly available datasets such as:  
 - **NIH ChestX-ray14 Dataset**  
@@ -65,7 +65,7 @@ This project uses publicly available datasets such as:
 - Apply data augmentation (rotation, scaling, flipping) to enhance model generalization.  
 
 
-### 🤖 Model Training and Evaluation  
+## 🤖 Model Training and Evaluation  
 
 - **Model**:  
   A **Convolutional Neural Network (CNN)** is employed to extract features and classify diseases.  
