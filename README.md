@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1fd0047c-ff8a-4f23-8eb1-13a580c6f364)
+![image](https://github.com/user-attachments/assets/2066160a-9442-4a1e-a821-3c2c71e12702)
 
 # LUNG DISEASE CLASSIFICATION AND DETECTION USING MACHINE LEARNING TECHNIQUES 
 Assistance for doctors in disease detection can be very useful in environments with scarce resources and personnel. Historically, many patients could have been cured with early detection of the disease. 
