@@ -46,17 +46,26 @@ The primary goal is to assist healthcare professionals by reducing diagnostic ti
 
 ## 🛠️ Technologies Used  
 
-- **Programming Language**: 🐍 Python  
-- **Machine Learning Frameworks**:  
-  - TensorFlow & Keras  
-  - PyTorch  
-  - Scikit-learn  
+### **Programming Languages & Frameworks** 💻  
+- **Python** 🐍: Core programming language for model development and deployment.  
+- **TensorFlow/Keras** 🤖: Frameworks used for building and training the deep learning model.  
+- **Gradio** 🎨: For creating an interactive and user-friendly interface.
 
-- **Image Processing Tools**: 🖼️ OpenCV  
-- **Data Analysis**: 📊 Pandas, NumPy  
-- **Visualization**: 📉 Matplotlib, Seaborn  
+### **Deployment Platform** 🌐  
+- **Hugging Face Spaces** 🧠: Hosting the app and making it publicly accessible.  
 
+### **Tools** 🛠️  
+- **Google Colab** 📚: Environment for training and evaluating the model.  
+- **NumPy** ➕: For numerical computations and preprocessing.  
+- **Pillow** 🖼️: For image processing in Python.  
 
+### **Version Control** 📂  
+- **Git** 🕵️: For managing and tracking changes to the project.  
+- **GitHub** 🌐: Repository hosting service for version control.
+
+### **Dataset Handling** 📁  
+- **ImageDataGenerator** 🧩: For loading and augmenting image datasets.  
+ 
 
 ## 📂 Dataset  
 
