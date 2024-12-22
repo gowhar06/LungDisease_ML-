@@ -105,59 +105,122 @@ dataset/
    unzip archive.zip -d dataset
    ```
 3. Verify that the dataset is structured into separate folders for each class as shown above.
+ 
 
-### **Sample Dataset Code**
-If you want to load and preprocess the dataset programmatically in Python:
-```python
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-dataset_path = "dataset"
-# ImageDataGenerator for loading and augmenting data
-datagen = ImageDataGenerator(
-    rescale=1.0 / 255.0,  # Normalize pixel values
-    validation_split=0.2  # Split 20% of data for validation
-)
+## 🤖 Model Training , Export and Deployment 
 
-# Load training data
-train_data = datagen.flow_from_directory(
-    dataset_path,
-    target_size=(224, 224),  # Resize images
-    batch_size=32,
-    class_mode='categorical',
-    subset='training'
-)
+### **1. Model Training** 🧠
 
-# Load validation data
-validation_data = datagen.flow_from_directory(
-    dataset_path,
-    target_size=(224, 224),
-    batch_size=32,
-    class_mode='categorical',
-    subset='validation'
-)
-```
-## **Next Steps**
-1. **Model Training**: Train a CNN model using TensorFlow/Keras.
-2. **Model Export**: Save the trained model as `model.h5`.
-3. **Deployment**: Deploy the trained model using Gradio on Hugging Face Spaces.
+#### **Dataset Preparation** 📂  
+- The dataset used is a collection of chest X-ray images categorized into three classes:  
+  1. **Lung Opacity** 🫁  
+  2. **Normal** ✅  
+  3. **Viral Pneumonia** 🦠  
+- The dataset was preprocessed by resizing the images to 224x224 pixels and normalizing pixel values to a range of [0, 1].
 
+#### **Training Workflow** 🔄  
+- A **Convolutional Neural Network (CNN)** was implemented using TensorFlow/Keras.  
+- Data augmentation techniques such as rotation, flipping, and zooming were applied to enhance the model's robustness.  
+- **Training Parameters**:  
+  - Optimizer: Adam  
+  - Loss Function: Categorical Crossentropy  
+  - Metrics: Accuracy  
+  - Epochs: 10 (adjustable based on performance)  
+- The training process was carried out in **Google Colab**, leveraging GPU acceleration for faster computations.
 
-## 🤖 Model Training and Evaluation  
+---
 
-- **Model**:  
-  A **Convolutional Neural Network (CNN)** is employed to extract features and classify diseases.  
+### **2. Model Export** 📦  
 
-- **Metrics Used**:  
-  - ✅ Accuracy  
-  - 🏆 Precision  
-  - 🔄 Recall  
-  - 💡 F1-Score  
-  - 📈 ROC-AUC  
+#### **Steps to Save the Model**:  
+1. After achieving satisfactory accuracy, the trained model was exported using the `.h5` format:  
+   ```python
+   model.save('model.h5')
+   ```
+2. This format ensures compatibility for reloading the model during deployment.  
 
-- **Steps**:  
-  1. Train the model on augmented and preprocessed datasets.  
-  2. Evaluate its performance using a separate test dataset.  
-  3. Fine-tune the model to improve results based on evaluation metrics.  
+#### **Verification**:  
+- The saved model was reloaded to validate its integrity and compatibility:  
+  ```python
+  from tensorflow.keras.models import load_model
+  model = load_model('model.h5')
+  ```
 
+---
+
+### **3. Deployment** 🌐  
+
+#### **Platform**:  
+- The application was deployed on **Hugging Face Spaces**, an easy-to-use platform for hosting machine learning models.
+
+#### **Steps for Deployment**:  
+1. **Prepare the App Code**:  
+   - The app was built using **Gradio** for its interactive interface.  
+   - Key functionalities included:  
+     - Loading the model (`model.h5`).  
+     - Processing uploaded images.  
+     - Predicting the class of the image using the trained model.  
+   - Example `app.py` code:  
+     ```python
+     import gradio as gr
+     from tensorflow.keras.models import load_model
+     from tensorflow.keras.preprocessing import image
+     import numpy as np
+
+     model = load_model('model.h5')
+
+     def predict_image(img):
+         img = img.resize((224, 224))
+         img_array = np.array(img) / 255.0
+         img_array = np.expand_dims(img_array, axis=0)
+         prediction = model.predict(img_array)
+         class_names = ['Lung Opacity', 'Normal', 'Viral Pneumonia']
+         return class_names[np.argmax(prediction)]
+
+     interface = gr.Interface(
+         fn=predict_image,
+         inputs=gr.Image(type="pil"),
+         outputs="text",
+         title="Lung Disease Detection",
+         description="Upload a chest X-ray image to classify."
+     )
+
+     if __name__ == "__main__":
+         interface.launch()
+     ```
+
+2. **Upload Files to Hugging Face**:  
+   - Upload the following files:  
+     - `app.py`  
+     - `model.h5`  
+     - `requirements.txt`  
+
+3. **Create `requirements.txt`**:  
+   - Include all dependencies required for the app:  
+     ```plaintext
+     gradio==3.36.0
+     tensorflow
+     numpy
+     Pillow
+     ```
+
+4. **Deploy the Space**:  
+   - Go to the Hugging Face Spaces dashboard and create a new Space.  
+   - Choose **Gradio** as the framework.  
+   - Upload the files and wait for the build process to complete.  
+
+5. **Set the App to Public**:  
+   - Enable public access to allow others to use your app.  
+
+---
+
+### **Usage** 🖥️  
+- Access the app via the public URL provided by Hugging Face Spaces.  
+- Upload a chest X-ray image to classify it as **Lung Opacity**, **Normal**, or **Viral Pneumonia**.
+
+---
+
+Let me know if you need further clarification or additional sections! 😊
 By combining cutting-edge ML techniques with real-world datasets, this project offers a powerful tool for improving diagnostic workflows. 🌟
 
 
