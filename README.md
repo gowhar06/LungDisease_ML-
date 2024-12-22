@@ -62,9 +62,6 @@ The primary goal is to assist healthcare professionals by reducing diagnostic ti
 ### **Version Control** 📂  
 - **Git** 🕵️: For managing and tracking changes to the project.  
 - **GitHub** 🌐: Repository hosting service for version control.
-
-### **Dataset Handling** 📁  
-- **ImageDataGenerator** 🧩: For loading and augmenting image datasets.  
  
 
 ## 📂 Dataset  
