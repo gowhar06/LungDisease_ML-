@@ -104,10 +104,7 @@ dataset/
 If you want to load and preprocess the dataset programmatically in Python:
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-
-# Path to dataset directory
 dataset_path = "dataset"
-
 # ImageDataGenerator for loading and augmenting data
 datagen = ImageDataGenerator(
     rescale=1.0 / 255.0,  # Normalize pixel values
