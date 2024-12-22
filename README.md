@@ -60,15 +60,82 @@ The primary goal is to assist healthcare professionals by reducing diagnostic ti
 
 ## 📂 Dataset  
 
-This project uses publicly available datasets such as:  
-- **NIH ChestX-ray14 Dataset**  
-- **RSNA Pneumonia Detection Challenge**  
-- Other lung disease datasets  
+### **Description**
+The dataset used in this project consists of chest X-ray images categorized into three classes:
+1. **Lung Opacity**: X-rays showing opacity in lung regions.
+2. **Normal**: Healthy lung X-rays with no abnormalities.
+3. **Viral Pneumonia**: X-rays indicating the presence of viral pneumonia.
 
-🛠️ **Preprocessing Steps**:  
-- Normalize image data for consistency.  
-- Apply data augmentation (rotation, scaling, flipping) to enhance model generalization.  
+### **Source**
+The dataset is typically organized in the following folder structure after extraction:
+```
+dataset/
+│
+├── Lung Opacity/
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   └── ...
+│
+├── Normal/
+│   ├── image1.jpg
+│   ├── image2.jpg
+│   └── ...
+│
+└── Viral Pneumonia/
+    ├── image1.jpg
+    ├── image2.jpg
+    └── ...
+```
 
+### **Preprocessing Steps**
+1. **Normalize Pixel Values**: All pixel values are normalized to a range of `[0, 1]` by dividing by 255.
+2. **Resize Images**: Each image is resized to `224x224` pixels to match the input size of the model.
+3. **Augmentation (Optional)**: Techniques like rotation, flipping, and zooming are applied to increase dataset diversity (only during training).
+
+### **Dataset Preparation Steps**
+1. Download the dataset archive as a `.zip` file, named `archive.zip`.
+2. Unzip the archive:
+   ```bash
+   unzip archive.zip -d dataset
+   ```
+3. Verify that the dataset is structured into separate folders for each class as shown above.
+
+### **Sample Dataset Code**
+If you want to load and preprocess the dataset programmatically in Python:
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+# Path to dataset directory
+dataset_path = "dataset"
+
+# ImageDataGenerator for loading and augmenting data
+datagen = ImageDataGenerator(
+    rescale=1.0 / 255.0,  # Normalize pixel values
+    validation_split=0.2  # Split 20% of data for validation
+)
+
+# Load training data
+train_data = datagen.flow_from_directory(
+    dataset_path,
+    target_size=(224, 224),  # Resize images
+    batch_size=32,
+    class_mode='categorical',
+    subset='training'
+)
+
+# Load validation data
+validation_data = datagen.flow_from_directory(
+    dataset_path,
+    target_size=(224, 224),
+    batch_size=32,
+    class_mode='categorical',
+    subset='validation'
+)
+```
+## **Next Steps**
+1. **Model Training**: Train a CNN model using TensorFlow/Keras.
+2. **Model Export**: Save the trained model as `model.h5`.
+3. **Deployment**: Deploy the trained model using Gradio on Hugging Face Spaces.
 
 
 ## 🤖 Model Training and Evaluation  
