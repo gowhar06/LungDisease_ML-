@@ -17,7 +17,7 @@ This approach provides an efficient and reliable solution to assist healthcare p
   * Features
   * Technologies Used
   * Dataset
-  * Model Training and Evaluation 
+  * Model Training , Export and Deployment 
 
 
 ## 🚀 Project Overview
