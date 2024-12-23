@@ -171,12 +171,7 @@ dataset/
 
 3. **Create `requirements.txt`**:  
    - Include all dependencies required for the app:  
-     ```plaintext
-     gradio==3.36.0
-     tensorflow
-     numpy
-     Pillow
-     ```
+     
 
 4. **Deploy the Space**:  
    - Go to the Hugging Face Spaces dashboard and create a new Space.  
