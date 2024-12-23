@@ -15,7 +15,7 @@ This approach provides an efficient and reliable solution to assist healthcare p
 ## Table of Contents
   * Project Overview
   * Features
-  * Technologies Used
+  * Technologies 
   * Dataset
   * Model Training, Export and Deployment
   * Usage
