@@ -160,7 +160,7 @@ dataset/
      - Loading the model (`model.h5`).  
      - Processing uploaded images.  
      - Predicting the class of the image using the trained model.
-2. **Project file**: https://github.com/gowhar06/LungDisease_ML-/blob/main/app.py 
+2. **App file**:[app.py]( https://github.com/gowhar06/LungDisease_ML-/blob/main/app.py )
    - Example `app.py` code:  
      ```python
      import gradio as gr
