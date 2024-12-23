@@ -34,7 +34,7 @@ The primary goal is to assist healthcare professionals by reducing diagnostic ti
   Quickly detects abnormalities in lung imaging data.  
 
 - **Disease Classification**:  
-  Classifies lung diseases like pneumonia, and lung cancer.  
+  Classifies lung diseases like pneumonia.  
 
 - **User-Friendly Deployment**:  
   Can be deployed as a web application or API for real-time predictions.  
