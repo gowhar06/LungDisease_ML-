@@ -25,7 +25,7 @@ This approach provides an efficient and reliable solution to assist healthcare p
 Lung diseases are a significant public health concern, often requiring timely and accurate diagnosis to prevent severe health complications. 
 This project leverages machine learning to create an automated system for:
   * 🔍 Detection: Identifying lung abnormalities from medical images.
-  * 📊 Classification: Differentiating between diseases such as pneumonia, tuberculosis, and lung cancer.
+  * 📊 Classification: Differentiating between diseases such as pneumonia and lung cancer.
 The primary goal is to assist healthcare professionals by reducing diagnostic time and improving accuracy, especially in under-resourced areas.
 
 ## ✨ Features  
