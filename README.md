@@ -170,8 +170,7 @@ dataset/
      - `requirements.txt`  
 
 3. **Create `requirements.txt`**:  
-   - Include all dependencies required for the app:  
-     
+   - **Requirements Text File**:  [requirements.txt](https://github.com/gowhar06/LungDisease_ML-/blob/main/requirements.txt)
 
 4. **Deploy the Space**:  
    - Go to the Hugging Face Spaces dashboard and create a new Space.  
