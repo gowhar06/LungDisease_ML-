@@ -188,8 +188,6 @@ dataset/
 
 ---
 
-Let me know if you need further clarification or additional sections! 😊
-By combining cutting-edge ML techniques with real-world datasets, this project offers a powerful tool for improving diagnostic workflows. 🌟
 
 
 ## 📜 License  
