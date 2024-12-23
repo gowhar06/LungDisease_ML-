@@ -160,35 +160,8 @@ dataset/
      - Loading the model (`model.h5`).  
      - Processing uploaded images.  
      - Predicting the class of the image using the trained model.
-2. **App file**: [app.py]( https://github.com/gowhar06/LungDisease_ML-/blob/main/app.py )
-   - Example `app.py` code:  
-     ```python
-     import gradio as gr
-     from tensorflow.keras.models import load_model
-     from tensorflow.keras.preprocessing import image
-     import numpy as np
-
-     model = load_model('model.h5')
-
-     def predict_image(img):
-         img = img.resize((224, 224))
-         img_array = np.array(img) / 255.0
-         img_array = np.expand_dims(img_array, axis=0)
-         prediction = model.predict(img_array)
-         class_names = ['Lung Opacity', 'Normal', 'Viral Pneumonia']
-         return class_names[np.argmax(prediction)]
-
-     interface = gr.Interface(
-         fn=predict_image,
-         inputs=gr.Image(type="pil"),
-         outputs="text",
-         title="Lung Disease Detection",
-         description="Upload a chest X-ray image to classify."
-     )
-
-     if __name__ == "__main__":
-         interface.launch()
-     ```
+   - **App file**: [app.py]( https://github.com/gowhar06/LungDisease_ML-/blob/main/app.py )
+   
 
 2. **Upload Files to Hugging Face**:  
    - Upload the following files:  
