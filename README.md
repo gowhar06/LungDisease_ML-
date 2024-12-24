@@ -188,7 +188,7 @@ dataset/
 - Access the app via the public URL provided by Hugging Face Spaces.  
 - Upload a chest X-ray image to classify it as **Lung Opacity**, **Normal**, or **Viral Pneumonia**.
 
----
+
 
 ## 📜 License  
 
