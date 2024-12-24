@@ -100,7 +100,7 @@ dataset/
 3. **Augmentation (Optional)**: Techniques like rotation, flipping, and zooming are applied to increase dataset diversity (only during training).
 
 ### **Dataset Preparation Steps**
-1. Download the dataset archive as a `.zip` file, named `archive.zip`.
+1. Download the dataset archive as a `.zip` file, named `Data_set.zip`.
 2. Unzip the archive:
    ```bash
    unzip archive.zip -d dataset
