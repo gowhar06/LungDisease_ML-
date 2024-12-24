@@ -164,23 +164,23 @@ dataset/
    - **App file**: [app.py]( https://github.com/gowhar06/LungDisease_ML-/blob/main/app.py )
    
 
-2. **Upload Files to Hugging Face**:  
+2.**Create `requirements.txt`**:  
+   - **Requirements Text File**:  [requirements.txt](https://github.com/gowhar06/LungDisease_ML-/blob/main/requirements.txt)
+
+3. **Upload Files to Hugging Face**:  
    - Upload the following files:  
      - `app.py`  
      - `model.h5`  
-     - `requirements.txt`  
-
-3. **Create `requirements.txt`**:  
-   - **Requirements Text File**:  [requirements.txt](https://github.com/gowhar06/LungDisease_ML-/blob/main/requirements.txt)
-
+     - `requirements.txt`
+   
 4. **Deploy the Space**:  
-   - Go to the Hugging Face Spaces dashboard and create a new Space.  
+   - Go to the Hugging Face Spaces dashboard and create a new Space.
+   - Enable public access to allow others to use your app.    
    - Choose **Gradio** as the framework.  
    - Upload the files and wait for the build process to complete.  
 
-5. **Set the App to Public**:  
-   - Enable public access to allow others to use your app.  
-
+5. ****:  
+   
 ---
 
 ### **Usage** 🖥️  
