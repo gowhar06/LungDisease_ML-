@@ -179,8 +179,8 @@ dataset/
    - Choose **Gradio** as the framework.  
    - Upload the files and wait for the build process to complete.  
 
-5. ****:  
-   
+5. **Project is sucessfully deployed in Hugging Faces**:  
+   -**URL to access**-[Project link](https://huggingface.co/spaces/Gowhar06/Lung_diease_detection)
 ---
 
 ### **Usage** 🖥️  
