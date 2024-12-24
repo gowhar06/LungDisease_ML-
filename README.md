@@ -184,7 +184,7 @@ dataset/
    -**URL to access**-[Project link](https://huggingface.co/spaces/Gowhar06/Lung_diease_detection)
 
 
-### **Usage** 🖥️  
+## **Usage** 🖥️  
 - Access the app via the public URL provided by Hugging Face Spaces.  
 - Upload a chest X-ray image to classify it as **Lung Opacity**, **Normal**, or **Viral Pneumonia**.
 
