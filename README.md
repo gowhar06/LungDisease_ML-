@@ -182,7 +182,7 @@ dataset/
 
 5. **Project is sucessfully deployed in Hugging Faces**:  
    -**URL to access**-[Project link](https://huggingface.co/spaces/Gowhar06/Lung_diease_detection)
----
+
 
 ### **Usage** 🖥️  
 - Access the app via the public URL provided by Hugging Face Spaces.  
