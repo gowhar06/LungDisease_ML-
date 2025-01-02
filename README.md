@@ -189,7 +189,6 @@ dataset/
 - Upload a chest X-ray image to classify it as **Lung Opacity**, **Normal**, or **Viral Pneumonia**.
 
 
-
 ## 📜 License  
 
 This project is licensed under the **MIT License**. For more details, refer to the [LICENSE](LICENSE) file.  
@@ -199,4 +198,14 @@ This project is licensed under the **MIT License**. For more details, refer to t
 
 Feel free to reach out for any inquiries, suggestions, or collaboration opportunities:  
   - ✉️ **Email**: sshaikgowhar@example.com  
-  - 🌐 **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/shaikgowhar672004/)   
+  - 🌐 **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/shaikgowhar672004/)
+
+
+ ## Contributors
+
+| Name           | GitHub Profile                     |
+|----------------|-------------------------------------|
+| Shaik Gowhar       | [GitHub](https://github.com/gowhar06) |
+| Chakka Varshini     | [GitHub](https://github.com/Varshini-0609) |
+| Devisetty Vaagdevi    | [GitHub](https://github.com/testgithubvaagdevi) |
+| Thumati Dedeepya   | [GitHub](https://github.com/dedeepya182004) |
